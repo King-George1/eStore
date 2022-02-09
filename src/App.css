@@ -1,21 +1,177 @@
+.bodyContent{
+  background-image: url("./FotoJet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body{
+  width: 100%;
+  margin: 0 auto;
+}
+
 .navBar{
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 30% 70%;
+}
+.navItems{
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.navItems li{
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 0.188rem;;
+}
+
+.navButton{
+  border: 0px;
+  padding: 0.25rem;
+}
+
+.logo{
+  margin: auto 10px;
+}
+
+.displayContent{
+  font-size: 40px; 
+  line-height: 1;
+}
+
+.headerDisplayImage{
+  /* margin-bottom: 160px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerImg{
+  margin-top: 90px;
+  margin-bottom: 120px;
+}
+
+.seeMoreButton{
+  background-color: red;
+  border: 0px;
+            padding: 15px 90px 10px;
+            border-radius: 7px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 100;
+}
+
+.productImage{
+  position: relative;
+  display: inline-block;
+  top: -20%;
+  right: -78%;
+  color: red;
+  font-weight: 700;
+  border: 0.175rem solid red;
+  padding: 3px;
+  font-size: 1rem;
+
+}
+
+.productName{
+  position: relative;
+  display: inline-block;
+  top: -20%;
+  right: 15%;
+  color: black;
+  padding: 3px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.productImage:hover{
+  cursor: pointer;
+}
+
+.cartItems{
+  margin: 0 auto;
+  width: 90%;
 }
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px){}
+@media (max-width: 575.98px){
+  .navBar{
+    grid-template-columns: 5% 95% !important;
+  }
+  .navItems li{
+    margin-right: 7px;
+    font-size: 0.625rem;
+  }
+  .logo{
+    margin-left: 1px;
+  }
+  .productImage{
+    top: -35%;
+  right: -30%;
+  font-weight: 400;
+  border: 0.155rem solid red;
+  }
+  .productName, .productImage{
+    position: static !important;
+    top: 0px;
+    right: 0px;
+    margin-top: 0px;
+  }
+  .productImage{
+    margin-bottom: 0px;
+  }
+ 
+}
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) and (max-width: 768.98px){}
+@media (min-width: 576px) and (max-width: 768.98px){
+  .navBar{
+    grid-template-columns: 10% 90% !important;
+  }
+  .productImage{
+    top: -28%;
+    right: -60%;
+  }
+  .productName{
+    top: -25%;
+    right: 25%;
+  }
+}
 
 /* Medium devices (tablets, 769px and up) */
 
-@media (min-width: 769px) and (max-width: 991.98px){}
+@media (min-width: 769px) and (max-width: 991.98px){
+  
+}
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) and (max-width: 1366px) {}
+@media (min-width: 992px) and (max-width: 1366px) {
+  .productImage{
+    top: -22%;
+    right: -75%;
+  }
+}
 
 /* Extra large screens */
-@media (min-width: 1367px){}
+@media (min-width: 1367px){
+  .body{
+    width: 75%;
+    margin: 0 auto;
+  }
+  .productImage{
+    top: -20%;
+    right: -72%;
+  }
+  .headerImg{
+    margin-top: 90px;
+    margin-bottom: 250px;
+  }
+  .watchDesc{
+    margin-top: 100px;
+  }
+}

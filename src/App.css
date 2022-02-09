@@ -12,6 +12,7 @@
 .navBar{
   display: grid;
   grid-template-columns: 30% 70%;
+  background-color: #6b696a;
 }
 .navItems{
   list-style: none;
